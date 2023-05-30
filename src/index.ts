@@ -12,8 +12,21 @@ class AppContainer extends HTMLElement {
     }
 
     render() {
-        const something = this.ownerDocument.createElement('div');
+        const something = this.ownerDocument.createElement('app-create');
         this.shadowRoot?.appendChild(something);
+
+        if (this.shadowRoot){
+            this.shadowRoot.innerHTML=``;
+
+            switch (appState.screen) {
+                case value:
+                    
+                    break;
+            
+                default:
+                    break;
+            }
+        }
     }
 }
 

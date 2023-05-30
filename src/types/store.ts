@@ -1,7 +1,7 @@
 export type Observer = { render: () => void } & HTMLElement;
 
 export type AppState = {
-  something: {};
+  screen: string;
 };
 
 export enum SomeActions {
@@ -10,7 +10,7 @@ export enum SomeActions {
 
 export interface XAction {
   action: SomeActions.X;
-  payload: Pick<AppState, "something">;
+  payload: Pick<AppState, "screen">;
 }
 
 export type Actions = XAction;

@@ -12,11 +12,7 @@ export default class RecipeInput extends HTMLElement {
     render(){
         if(this.shadowRoot){
             this.shadowRoot.innerHTML=``;
-
-            const title = this.ownerDocument.createElement("h1");
-            title.innerText = "Share your recipe";
-            this.shadowRoot.appendChild(title);
-
+            
             const form = this.ownerDocument.createElement("form")
                 
                 const nameIn = this.ownerDocument.createElement("input")
